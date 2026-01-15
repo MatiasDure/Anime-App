@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Grid from './components/Grid';
 import RandomAnime from './components/RandomAnime';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import HomeSection from './components/HomeSection';
 
 export default function App() {
   const [isUserSearching, setIsUserSearching] = useState<boolean>(false);
@@ -35,7 +36,7 @@ export default function App() {
                   style={{marginTop: 10}}  
                   /> 
               </>
-            : <RandomAnime />
+            : <HomeSection />
           }
         </View>
       </SafeAreaView>
